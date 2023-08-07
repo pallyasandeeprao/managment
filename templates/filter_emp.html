@@ -1,0 +1,46 @@
+<html >
+{%load static%}
+<head>
+    <title>Filter Employee</title>
+    <link rel="stylesheet" crossorigin="anonymous">
+    <style>
+     body
+        {
+        background-repeat:no-repeat;
+        background-size:cover;
+        }
+        .container
+        {
+        text-align:center;
+        margin-top:20px
+        float:left;
+        }
+        h1
+    {
+     border:2px solid;
+     text-align:center;
+     margin-top:20px;
+     width:60%;
+     margin-left:20%;
+     background-color:lightblue;
+    }
+    </style>
+</head>
+ <body style="background-image:url('{%static 'images/r.jpg'%}')" >
+  <div class="container">
+    <h1>Filter Employe Details!</h1>
+            <form action="/filter_emp" method="POST">
+        {%csrf_token%}
+                <label for="name">Employe First/Last name</label><br>
+    <input type="text" id="name" name="name" value="{{first_name}}"> <br>
+
+    <label for="dept">Department</label><br>
+    <input type="text" id="dept"  name="dept" value="{{dept}}"><br>
+    <label for="role">Role</label><br>
+    <input type="text" id="role" name="role" value="{{role}}"><br>
+                <button style="margin-top:30px; background-color:skyblue; color:black;"
+          type="submit" class="btn btn-primary">Submit</button>
+</form>
+  </div>
+</body>
+</html>

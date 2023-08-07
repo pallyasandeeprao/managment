@@ -1,0 +1,66 @@
+<html >
+{%load static%}
+  <head>
+    <title>Office Employee Managment System!</title>
+    <link rel="stylesheet"  >
+    <style>
+    body
+        {
+        background-repeat:no-repeat;
+        background-size:cover;
+        }
+      #demo
+      {
+      text-decoration:none;
+      border:2px inset lightblue ;
+      margin-top:40%;
+      color:black;
+      margin-left:20%;
+      border-radius:7px;
+
+      }
+      #demo1
+      {
+      text-decoration:none;
+      border:2px inset lightblue  ;
+      color:#080808;
+      margin-left:30px;
+      border-radius:7px;
+      }
+      #demo2
+      {
+      text-decoration:none;
+      border:2px inset lightblue  ;
+      color:black;
+       margin-left:30px;
+       border-radius:7px;
+      }
+      #demo3
+      {
+      text-decoration:none;
+      border:2px inset lightblue  ;
+      color:black;
+       margin-left:30px;
+       border-radius:7px;
+      }
+      .container1
+      {
+        border:2px solid;
+        width:60%;
+        margin-left:20%;
+        margin-top:5%;
+        text-align:center;
+        background-color:lightblue   ;
+      }
+</style>
+  </head>
+  <body style="background-image:url('{%static 'images/r.jpg'%}')" >
+  <div class="container">
+    <h1 class="container1">Office Employee Managment System!</h1>
+      <a id="demo" href="/all_emp" role="button">View All Employee</a>
+      <a id="demo1"  href="/add_emp" role="button">Add An Employee</a>
+      <a  id="demo2" href="remove_emp" role="button">Remove An Employee</a>
+      <a id="demo3" href="/filter_emp" role="button">Filter Employee Details</a>
+  </div>
+  </body>
+</html>
