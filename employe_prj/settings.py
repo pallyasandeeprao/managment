@@ -86,6 +86,8 @@ DATABASES = {
         'NAME': 'office1',
         'USER':'root',
         'PASSWORD':'root',
+        'PORT':'3306',
+        'HOST':'13.40.131.54'
 }
 }
 
